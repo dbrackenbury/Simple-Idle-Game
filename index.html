@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Idle game</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS -->
+    <script src="./js/scripts.js"></script>
+</head>
+<body>
+    <div class="canvas">
+        <div class="number">
+            <p id="liveCount"></p>
+            <button id="mainButton" onclick="inc(1)">CLICK</button>
+        </div>
+        <div class="leftSide">
+            <button class="upgradeButton" onclick="incInc(1, 10)">Upgrade click +1 <br> Cost: 10</button>
+            <button class="upgradeButton" onclick="incInc(10, 100)">Upgrade click +10 <br> Cost: 100</button>
+        </div>
+        <div class="rightSide">
+            <button class="idleButton" onclick="setInterval(idleInc(5), 100)">Idle upgrade +1/s</button>
+        </div>
+    </div>
+</body>
+</html>
