@@ -6,9 +6,6 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- JS -->
-    <script src="./js/scripts.js"></script>
 </head>
 <body>
     <div class="canvas">
@@ -17,12 +14,19 @@
             <button id="mainButton" onclick="inc(1)">CLICK</button>
         </div>
         <div class="leftSide">
+            <h1 class="bigText">MOUSE CLICK UPGRADES</h1>
             <button class="upgradeButton" onclick="incInc(1, 10)">Upgrade click +1 <br> Cost: 10</button>
             <button class="upgradeButton" onclick="incInc(10, 100)">Upgrade click +10 <br> Cost: 100</button>
         </div>
         <div class="rightSide">
-            <button class="idleButton" onclick="setInterval(idleInc(5), 100)">Idle upgrade +1/s</button>
+            <h1 class="bigText">IDLE TICK UPGRADES</h1>
+            <button id="idleButton1">Idle upgrade +1/s  <br> Cost: 100</button>
+            <button id="idleButton2">Idle upgrade +10/s <br> Cost: 1000</button>
         </div>
     </div>
+
+    <!-- JS -->
+    <script src="./js/scripts.js"></script>
+    <script src="./js/buttonEvents.js"></script>
 </body>
 </html>
